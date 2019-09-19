@@ -1,0 +1,6 @@
+export const CONTACT_US_URL = '/contact-us'
+export const HOME_PAGE_URL = '/'
+export const PRODUCT_PAGE_URL = '/product'
+export const SHOPPING_CART_PAGE_URL = '/shopping-cart'
+export const SIGNIN_PAGE_URL = '/sign-in'
+export const USER_PROFILE_URL = '/profile'

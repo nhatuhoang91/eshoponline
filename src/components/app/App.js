@@ -1,18 +1,16 @@
-import React from 'react';
-import {Switch, Route} from 'react-router-dom';
-import homepage from '../pages/home_page';
-import loginpage from '../pages/login_page';
-import productpage from '../pages/product_page';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Header from '../commons/header/Header.js'
+import Main from '../commons/main/Main.js'
+import Footer from '../commons/footer/Footer.js'
+import {AuthStatus} from '../../types'
 
 function App() {
   return (
     <div>
-      <Switch>
-        <Route exact path='/' component={homepage}/>
-        <Route exact path='/login' component={loginpage}/>
-        <Route exact path='/product' component={productpage}/>
-      </Switch>
+      <Header authStatus={AuthStatus.SIGNED_IN}/>
+      <Main/>
+      <Footer/>
     </div>
   );
 }
